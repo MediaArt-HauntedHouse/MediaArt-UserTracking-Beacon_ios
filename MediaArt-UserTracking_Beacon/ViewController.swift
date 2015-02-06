@@ -31,7 +31,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate {
     func peripheralManagerDidUpdateState(peripheral: CBPeripheralManager!) {
         
         // iBeaconのUUID.
-        let myProximityUUID = NSUUID(UUIDString: "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA")
+        let myProximityUUID = NSUUID(UUIDString: "FF2BB40C-6C0E-1801-A386-001C4DB9EE23")
         
         // iBeaconのIdentifier.
         let myIdentifier = ""
@@ -40,7 +40,7 @@ class ViewController: UIViewController, CBPeripheralManagerDelegate {
         let myMajor : CLBeaconMajorValue = 1
         
         // Minor.
-        let myMinor : CLBeaconMinorValue = 2
+        let myMinor : CLBeaconMinorValue = 1
         
         // BeaconRegionを定義.
         let myBeaconRegion = CLBeaconRegion(proximityUUID: myProximityUUID, major: myMajor, minor: myMinor, identifier: myIdentifier)
